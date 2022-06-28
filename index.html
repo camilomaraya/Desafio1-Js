@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Desafio 1 - JavaScript</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="card">
+            <img src="assets/img/bici.jpg" alt="imagen_de_producto" width="200px" height="200px">
+
+            <p><strong>BICICLETA MTB TRX-HYD ARO 29''</strong></p>
+
+            <input id="cantidad" class="inputnumb" type="number" placeholder="Cantidad">
+
+            <input id="color" class="inputtext" type="text" placeholder="Color">
+
+            <p id="valor" value="250000"> Precio: $250.000</p>
+
+            <input onclick="calcular()" type="button"  class="btn-total" value="Calcular Total">
+        </div>
+
+        <div class="resultados">
+            <p>Total: $<span id="total">0</span></p>
+            <p>Cantidad: <span id="cantidadT">0</span></p>
+            <p>Color: <span id="color-final"></span></p>
+        </div>
+
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
